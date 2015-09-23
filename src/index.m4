@@ -12,8 +12,10 @@
             <div class="wrapper">
                 <nav id="menu">
                     <ul>
-                        <li><a href="#project">Projects</a></li>
-                        <li><a href="#about">About me</a></li>
+                        <li lang="en"><a href="#project">Projects</a></li>
+                        <li lang="en"><a href="#about">About me</a></li>
+                        <li lang="sv"><a href="#project">Projekt</a></li>
+                        <li lang="sv"><a href="#about">Om mig</a></li>
                     </ul>
                 </nav>
                 <nav id="language">
