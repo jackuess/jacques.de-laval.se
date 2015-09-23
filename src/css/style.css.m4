@@ -141,10 +141,10 @@ body>section  {
 	text-align: center
 }
 
-html:lang(en) #contact_info article *[lang="sv"] {
+html:lang(en) *[lang="sv"] {
 	display: none;
 }
-html:lang(sv) #contact_info article *[lang="en"] {
+html:lang(sv) *[lang="en"] {
 	display: none;
 }
 #contact_info p {
