@@ -67,6 +67,23 @@ header nav li {
 	list-style: none;
 	margin-right: 1.5%
 }
+header nav#language {
+	position: relative;
+	text-align: center;
+}
+header nav#menu {
+	z-index: 1;
+}
+header nav#menu li {
+	margin-right: 5.5%
+}
+
+html:lang(en) *[lang="sv"] {
+	display: none;
+}
+html:lang(sv) *[lang="en"] {
+	display: none;
+}
 
 h1 {
 	color: #FF2343;
@@ -122,6 +139,13 @@ body>section  {
 #contact_info article {
 	display: table;
 	text-align: center
+}
+
+html:lang(en) #contact_info article *[lang="sv"] {
+	display: none;
+}
+html:lang(sv) #contact_info article *[lang="en"] {
+	display: none;
 }
 #contact_info p {
 	display: table-cell;
