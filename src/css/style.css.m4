@@ -129,29 +129,29 @@ body>section  {
 	width: 100%
 }
 
-#contact_info {
+#_contact_info {
 	background-color: #0C3531;
 	top: 0
 }
-#contact_info article {
+#_contact_info article {
 	display: table;
 	text-align: center
 }
 
-#contact_info p {
+#_contact_info p {
 	vertical-align: middle
 }
 
-html:lang(en) #contact_info article *[lang="en"], html:lang(sv) #contact_info article *[lang="sv"] {
+html:lang(en) #_contact_info article *[lang="en"], html:lang(sv) #_contact_info article *[lang="sv"] {
 	display: table-cell;
 }
 
-#project {
+#_project {
 	background-color: #111;
 	top: 100%;
 }
 
-#about {
+#_about {
 	background-color: #282A44;
 	top: 200%;
 }
