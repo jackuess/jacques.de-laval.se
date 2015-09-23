@@ -78,10 +78,7 @@ header nav#menu li {
 	margin-right: 5.5%
 }
 
-html:lang(en) *[lang="sv"] {
-	display: none;
-}
-html:lang(sv) *[lang="en"] {
+html:lang(en) *[lang="sv"], html:lang(sv) *[lang="en"] {
 	display: none;
 }
 
@@ -141,15 +138,12 @@ body>section  {
 	text-align: center
 }
 
-html:lang(en) #contact_info article *[lang="sv"] {
-	display: none;
-}
-html:lang(sv) #contact_info article *[lang="en"] {
-	display: none;
-}
 #contact_info p {
-	display: table-cell;
 	vertical-align: middle
+}
+
+html:lang(en) #contact_info article *[lang="en"], html:lang(sv) #contact_info article *[lang="sv"] {
+	display: table-cell;
 }
 
 #project {
