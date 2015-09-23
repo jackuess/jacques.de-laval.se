@@ -47,6 +47,27 @@ header>div.wrapper>* {
 	margin: 0; padding-top: 8pt; position: absolute; top: 0
 }
 
+header>div.wrapper>nav {
+	left: 0;
+	padding-left: 1%;
+	padding-top: 18pt;
+}
+header nav {
+	color: #eee;
+}
+header nav a:hover {
+	color: #FF3351
+}
+header nav ul {
+	margin: 0;
+	padding: 0
+}
+header nav li {
+	display: inline;
+	list-style: none;
+	margin-right: 1.5%
+}
+
 h1 {
 	color: #FF2343;
 	left: 66%;
@@ -70,7 +91,7 @@ h1 a, h1 a:hover, h1 a:visited, h1 a:link, h1 a:focus {
 }
 
 article {
-	color: rgba(255,255,255, 0.5);
+	color: rgba(255,255,255, 0.8);
 	height: 50%;
 	margin-left: auto;
 	margin-right: auto;
@@ -84,7 +105,8 @@ article>* {
 }
 
 article a {
-	color: rgba(255,255,255, 0.7)
+	color: inherit;
+	font-weight: bold;
 }
 
 body>section  {
@@ -104,4 +126,14 @@ body>section  {
 #contact_info p {
 	display: table-cell;
 	vertical-align: middle
+}
+
+#project {
+	background-color: #111;
+	top: 100%;
+}
+
+#about {
+	background-color: #282A44;
+	top: 200%;
 }
