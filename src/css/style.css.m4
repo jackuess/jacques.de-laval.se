@@ -77,6 +77,9 @@ header nav#menu {
 header nav#menu li {
 	margin-right: 5.5%
 }
+header nav#menu * {
+	white-space: nowrap;
+}
 
 html:lang(en) *[lang="sv"], html:lang(sv) *[lang="en"] {
 	display: none;
