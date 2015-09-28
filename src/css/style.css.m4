@@ -167,7 +167,6 @@ html:lang(en) #contact_info article *[lang="en"], html:lang(sv) #contact_info ar
 	body, .at:after {
 		font-size: 28pt;
 	}
-	}
 	article {
 		width: 100%
 	}
