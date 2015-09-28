@@ -67,6 +67,19 @@
             window.addEventListener("hashchange", function (event) {
                 setLang(this.location.hash.slice(1));
             });
+
+            window.addEventListener("wheel", function (event) {
+                var sections = document.getElementsByTagName("section");
+                var sectionHeight = sections[0].offsetHeight;
+                var scrollOffset = document.getElementsByTagName("body")[0].scrollTop;
+                var sectionIds = Array.prototype.map.call(sections, function (element) { return element.id; });
+                var currentPos = Math.floor(scrollOffset / sectionHeight);
+                var deltaPos = event.deltaY > 0 ? 1 : -1;
+
+                nextSection = sections[Math.min(sections.length - 1, currentPos + deltaPos)]
+                window.location = "#" + nextSection.id;
+                event.preventDefault();
+            });
         </script>
     </body>
 </html>
