@@ -37,14 +37,17 @@ header a {
 
 header div.wrapper {
 	position: relative;
-	margin:0;
+	margin: 0;
 	height: 4em
 }
 header>div.wrapper a {
 	-webkit-transition: color .5s
 }
 header>div.wrapper>* {
-	margin: 0; padding-top: 8pt; position: absolute; top: 0
+	margin: 0;
+	padding-top: 8pt;
+	position: absolute;
+	top: 0;
 }
 
 header>div.wrapper>nav {
@@ -77,7 +80,7 @@ header nav#menu {
 header nav#menu li {
 	margin-right: 5.5%
 }
-header nav#menu * {
+header * {
 	white-space: nowrap;
 }
 
@@ -126,35 +129,49 @@ article a {
 	font-weight: bold;
 }
 
-body>section  {
+section  {
 	height: 100%;
 	position: absolute;
 	width: 100%
 }
 
-#_contact_info {
+#contact_info {
 	background-color: #0C3531;
 	top: 0
 }
-#_contact_info article {
+#contact_info article {
 	display: table;
 	text-align: center
 }
 
-#_contact_info p {
+#contact_info p {
 	vertical-align: middle
 }
 
-html:lang(en) #_contact_info article *[lang="en"], html:lang(sv) #_contact_info article *[lang="sv"] {
+html:lang(en) #contact_info article *[lang="en"], html:lang(sv) #contact_info article *[lang="sv"] {
 	display: table-cell;
 }
 
-#_project {
+#project {
 	background-color: #111;
 	top: 100%;
 }
 
-#_about {
+#about {
 	background-color: #282A44;
 	top: 200%;
+}
+
+
+@media(max-device-width: 500px) {
+	body, .at:after {
+		font-size: 28pt;
+	}
+	}
+	article {
+		width: 100%
+	}
+	h1 {
+		font-size: 100%;
+	}
 }
