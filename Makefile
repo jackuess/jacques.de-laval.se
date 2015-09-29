@@ -37,3 +37,7 @@ $(SYSTEMD_SERVICE_FILE):
 .PHONY: install
 install: docker_image $(SYSTEMD_SERVICE_FILE)
 	install -m 0644 $(SYSTEMD_SERVICE_FILE) /etc/systemd/system/
+
+.PHONY: test
+test:
+	jshint src/javascript/
