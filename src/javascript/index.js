@@ -65,7 +65,7 @@ var touch = {
         window.addEventListener("touchmove", function (event) { self.onTouchMove(event); });
         window.addEventListener("touchend", function (event) { self.onTouchEnd(event); });
     }
-}
+};
 touch.init();
 
 window.addEventListener("verticalswipe", function (event) {
